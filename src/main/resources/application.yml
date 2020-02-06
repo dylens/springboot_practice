@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+spring:
+  mvc:
+    view:
+      # 定位模板的目录
+      prefix: classpath:/templates/
+  jackson:
+    #字符串时间，用这行表示
+    date-format: yyyy-MM-dd
+    #设置为东八区时间
+    timezone: GMT+8
+    serialization:
+      #使用数值timestamp表示日期
+      #write-dates-as-timestamps: true
+      #想要值为2019-01-01
+      write-dates-as-timestamps: false
+
+student:
+  name: dye
+  age: 10
+  sex: 女
+  birthday: 1991-01-01
+
+
+
