@@ -1,8 +1,5 @@
 package dy.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import dy.dto.Student;
 import dy.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,7 +18,7 @@ public class RestfulController {
         return "home";
     }
 
-    @RequestMapping(value = "/api/student",method = RequestMethod.GET)
+    @RequestMapping(value = "/api/student", method = RequestMethod.GET)
     @ResponseBody
     public String student() {
         return studentService.getStudentJson();
