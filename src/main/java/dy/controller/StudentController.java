@@ -8,15 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class RestfulController {
-
+public class StudentController {
     @Autowired
     private StudentService studentService;
-
-    @RequestMapping("/home")
-    public String home() {
-        return "home";
-    }
 
     @RequestMapping(value = "/api/student", method = RequestMethod.GET)
     @ResponseBody
